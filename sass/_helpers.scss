@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+*:focus,
+*:active {
+  outline: 0;
+}
+
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: $fontRegular;
+  color: $colorWhite;
+  background-color: $colorPrimary;
+}
+
+input {
+  -webkit-box-shadow: 0 0 0 100px transparent inset;
+}
+a,
+button {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: $colorWhite;
+  &:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+a:focus,
+a:visited,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+// Flex style
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.justify {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.align-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.align-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}

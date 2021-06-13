@@ -1,0 +1,77 @@
+footer {
+  position: relative;
+  padding: 23px 100px;
+  border-top: 1px solid $colorSecondary;
+  @include max-screen(1200px) {
+    padding: 23px 60px;
+  }
+  @include max-screen(992px) {
+    padding: 20px 20px;
+  }
+  @include max-screen(480px) {
+    padding: 20px 15px;
+  }
+  & .footer_wrapp {
+    width: 100%;
+    & .footer_box {
+      width: 50%;
+      padding: 0px 35px;
+      @include max-screen(1200px) {
+        padding: 0px 20px;
+      }
+      @include max-screen(992px) {
+        padding: 0px 15px;
+      }
+      @include max-screen(769px) {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0px;
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+      &.disclamer {
+        text-align: right;
+      }
+      & ul {
+        width: 100%;
+        list-style-type: none;
+        @include max-screen(769px) {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+        }
+        & li {
+          margin-right: 15px;
+          margin-bottom: 10px;
+          &:last-of-type {
+            margin-right: 0px;
+          }
+          & a {
+            font-family: $fontBold;
+            font-size: 12px;
+            color: $colorWhite;
+            &:hover {
+              color: $colorSecondary;
+            }
+          }
+        }
+      }
+      & p {
+        font-family: $fontRegular;
+        font-size: 10px;
+        color: $colorWhite;
+        width: 100%;
+        margin-bottom: 15px;
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+        @include max-screen(480px) {
+          & br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

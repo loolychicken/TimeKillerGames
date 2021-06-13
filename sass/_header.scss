@@ -1,0 +1,91 @@
+// Style for header element
+header {
+  position: relative;
+  width: 100%;
+  background-color: $colorSecondary;
+  padding: 11px 0px;
+  @include max-screen(769px) {
+    padding: 20px 30px;
+  }
+  @include max-screen(480px) {
+    padding: 20px 15px;
+  }
+  & a.logo_link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 230px;
+    @include max-screen(1200px) {
+      width: 200px;
+    }
+    @include max-screen(769px) {
+      width: auto;
+      left: 30px;
+      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+    }
+    @include max-screen(769px) {
+      left: 15px;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  & .header_wrapp {
+    width: 100%;
+    padding: 13px 100px;
+    @include max-screen(1200px) {
+      padding: 13px 60px;
+    }
+    @include max-screen(992px) {
+      padding: 13px 30px;
+    }
+    @include max-screen(769px) {
+      padding: 0px 0px;
+    }
+    & a.login_btn {
+      font-family: $fontBlack;
+      font-size: 14px;
+      color: $colorWhite;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 2px solid $colorWhite;
+      width: 150px;
+      height: 53px;
+      position: relative;
+      @include max-screen(480px) {
+        width: 105px;
+      }
+      & span {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+        letter-spacing: inherit;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        width: 100%;
+        text-align: center;
+      }
+      &:hover span {
+        letter-spacing: 2.8px;
+      }
+    }
+  }
+}
